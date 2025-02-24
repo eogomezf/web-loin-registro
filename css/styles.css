@@ -80,3 +80,165 @@ header {
     background: #fff;
     color: #000;
 }
+
+.fondo {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: transfomr .4s ease height .2s ease;
+    transform: scale(1);
+}
+
+.fondo.active-btn {
+    transform: scale(1);
+}
+
+.fondo.active {
+    height: 455px;
+}
+
+.fondo .contenedor-form {
+    width: 100%;
+    padding: 40px;
+}
+
+.fondo .contenedor-form.login {
+    transition: .17s ease;
+    transform: translateX(0);
+}
+
+.fondo.active .contenedor-form.login {
+    transition: none;
+    transform: translateX(-400px);
+}
+
+.fondo.active .contenedor-form.registrar {
+    transition: transform .17s ease;
+    transform: translateX(0);
+}
+
+.fondo .icono-cerrar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background-color: #090f1d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.contenedor-form h2{
+    font-size: 2rem;
+    color: #f1efef;
+    text-align: center;
+}
+
+.contenedor-input {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #f1efef;
+    margin: 30px 0;
+}
+
+.contenedor-input label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    font-weight: 600;
+    pointer-events: none;
+    transition: .4s;
+    color:#f1efef;
+}
+
+.contenedor-input input:focus~label,
+.contenedor-input input:valid~label {
+    top: -5px;
+}
+
+.contenedor-input input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border:none;
+    outline: none;
+    font-size: 1rem;
+    color: #f1efef;
+    padding: 0 35px 0 5 px;
+}
+
+.contenedor-input .icono{
+    position: absolute;
+    right: 8px;
+    font-size: 1.4rem;
+    color:#f1efef;
+    line-height: 57px;
+}
+
+.recordar {
+    font-size: .9rem;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.recordar label input {
+    accent-color: #090f1d;
+    margin-right: 3px;
+}
+
+.recordar a{
+    color:#f1efef;
+    text-decoration: none;
+}
+
+.recordar a:hover{
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #090f1d;
+    color: #f1efef
+}
+
+.registrar {
+    font-size: .9rem;
+    color: #f1efef ;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.registrar p a{
+    color: #f1efef;
+    text-decoration: none;
+}
+
+.registrar p a:hover{
+    text-decoration: underline;
+}

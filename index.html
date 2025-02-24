@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Login & Registro</title>
 </head>
@@ -18,6 +19,43 @@
             <button class="btn">Iniciar Sesión</button>
         </nav>
     </header>
-    
+    <div class="fondo">
+        <span class="icono-cerrar"><i class="bi bi-box-arrow-right"></i></span>
+
+        <div class="contenedor-form">
+            <h2>Iniciar Sesión</h2>
+            <form action="#">
+                <div class="contenedor-input">
+                    <span class="icono">
+                        <i class="bi bi-envelope"></i>
+                    </span>   
+                    <input type="email" name="" id="" required>
+                    <label for="#">Email</label>
+
+                </div>
+
+                <div class="contenedor-input">
+                    <span class="icono">
+                        <i class="bi bi-shield-lock-fill"></i>
+                    </span>   
+                    <input type="password" name="" id="" required>
+                    <label for="#">Password</label>
+
+                </div>
+
+                <div class="recordar">
+                    <label for="#"><input type="checkbox">Recordar Sesión</label>
+                    <a href="#">¿Olvidó su Contraseña?</a>
+                </div>
+
+                <button type="submit" class="btn">Iniciar Sesión</button>
+
+                <div class="registrar">
+                  <p>¿No tienes cuenta? <a href="#" class="registrar-link">Registrar</a></p>
+                </div>
+            </form>
+
+        </div>
+    </div>
 </body>
 </html>

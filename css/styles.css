@@ -13,7 +13,6 @@ body {
     align-items: center;
     min-height: 100vh;
     background: url(https://i.ibb.co/CpWz8PP7/fondocity.jpg);
-    /* background: url(img/406.jpg);    */
     background-size: cover;
     background-position: center;
 }
@@ -27,4 +26,57 @@ header {
     display: flex;
     justify-content: space-between;
     z-index: 99;
+}
+
+.logo{ 
+   font-size: 2.3rem;
+   color: #fff;
+   user-select: none;
+   cursor: pointer; 
+}
+
+
+.navegacion a{
+    position: relative;
+    font-size: 1.1rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navegacion a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    bottom: -6px;
+    left: 0;
+    height: 2px;
+    background: #fff;  
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s;
+}
+
+.navegacion a:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.navegacion .btn{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: #fff;
+    font-weight: 600;
+    margin-left: 40px;
+}
+
+.navegacion .btn:hover{
+    background: #fff;
+    color: #000;
 }
